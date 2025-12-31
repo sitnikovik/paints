@@ -1,8 +1,8 @@
 package background
 
 import (
-	ansi "github.com/sitnikovik/paints/ansi/color"
-	ansiBackground "github.com/sitnikovik/paints/ansi/color/background"
+	ansi "github.com/sitnikovik/paints/internal/ansi/color"
+	ansiBackground "github.com/sitnikovik/paints/internal/ansi/color/background"
 )
 
 // Purple returns a new string with purple background.

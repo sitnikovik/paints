@@ -1,8 +1,8 @@
 package background
 
 import (
-	ansi "github.com/sitnikovik/paints/ansi/color"
-	ansiBackground "github.com/sitnikovik/paints/ansi/color/background"
+	ansi "github.com/sitnikovik/paints/internal/ansi/color"
+	ansiBackground "github.com/sitnikovik/paints/internal/ansi/color/background"
 )
 
 // Green returns a new string with green background.
