@@ -1,8 +1,8 @@
 package text
 
 import (
-	ansi "github.com/sitnikovik/paints/ansi/color"
-	ansiText "github.com/sitnikovik/paints/ansi/color/text"
+	ansi "github.com/sitnikovik/paints/internal/ansi/color"
+	ansiText "github.com/sitnikovik/paints/internal/ansi/color/text"
 )
 
 // Yellow returns a new string with yellow text.

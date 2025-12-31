@@ -3,8 +3,8 @@ package text
 import (
 	"testing"
 
-	ansi "github.com/sitnikovik/paints/ansi/color"
-	ansiText "github.com/sitnikovik/paints/ansi/color/text"
+	ansi "github.com/sitnikovik/paints/internal/ansi/color"
+	ansiText "github.com/sitnikovik/paints/internal/ansi/color/text"
 )
 
 func TestRed(t *testing.T) {

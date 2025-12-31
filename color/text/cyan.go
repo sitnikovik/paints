@@ -1,8 +1,8 @@
 package text
 
 import (
-	ansi "github.com/sitnikovik/paints/ansi/color"
-	ansiText "github.com/sitnikovik/paints/ansi/color/text"
+	ansi "github.com/sitnikovik/paints/internal/ansi/color"
+	ansiText "github.com/sitnikovik/paints/internal/ansi/color/text"
 )
 
 // Cyan returns a new string with cyan text.
