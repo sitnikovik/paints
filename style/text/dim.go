@@ -12,5 +12,5 @@ func Dim(s string) string {
 	if s == "" {
 		return ""
 	}
-	return ansiTextStyle.Dimm + s + ansi.Reset
+	return ansiTextStyle.Dim + s + ansi.Reset
 }
