@@ -22,7 +22,7 @@ func TestDim(t *testing.T) {
 			args: args{
 				s: "foo",
 			},
-			want: ansiTextStyle.Dimm + "foo" + ansi.Reset,
+			want: ansiTextStyle.Dim + "foo" + ansi.Reset,
 		},
 		{
 			name: "empty string",
