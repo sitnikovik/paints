@@ -31,7 +31,7 @@ linters-settings:
         disabled: false
       - name: package-comments
         severity: warning
-        disabled: true
+        disabled: false
 
 issues:
   exclude-use-default: false
