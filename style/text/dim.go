@@ -1,3 +1,5 @@
+// Copyright (c) 2025 Ilya Sitnikov
+// SPDX-License-Identifier: MIT
 package text
 
 import (
