@@ -17,7 +17,7 @@ Toolkit to prettify the output of your golang apps
 
 ## Installation
 
-```go
+```bash
 go get github.com/sitnikovik/paints
 ```
 
@@ -49,15 +49,6 @@ func main() {
 
 Full API reference is available on [pkg.go.dev](https://pkg.go.dev/github.com/sitnikovik/paints)
 
-
-## Project structure
-
-- `color/` — public packages `text` and `background` for coloring strings
-- `style/` — text style functions (bold, italic, etc.)
-- `internal/ansi/` — ANSI escape codes and helpers (internal)
-- `docs/` — documentation and release notes
-- Tests are colocated with packages (files ending with `_test.go`)
-
 ## Requirements
 
 - Go 1.23.4 (as declared in `go.mod`) — newer Go versions should work
@@ -67,13 +58,13 @@ Full API reference is available on [pkg.go.dev](https://pkg.go.dev/github.com/si
 
 Contributions are welcome. Suggested workflow:
 
-1. Pick an open issue and work on it. Open a Pull Request that references the issue when you ready
+1. Pick an open issue and work on it. Open a Pull Request that references the issue when you're ready
 2. If there is no suitable issue for your idea, either open a short issue describing the proposal or contact me (watch my [bio](https://github.com/sitnikovik)) and we will create an issue for you.
 3. Fork the repository and create a feature branch: `git checkout -b feature/name`
 4. Run and add tests for new behavior: `go test ./...`
 5. Commit changes with a descriptive message and open a Pull Request
 6. Follow the repository's code style and linters (we use `golangci-lint`)
-7. If the PR passes, we merge it and create version via Github releases
+7. If the PR passes, we merge it and create version via GitHub releases
 
 Please open an issue to discuss large or breaking changes before implementing.
 
