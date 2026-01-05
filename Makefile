@@ -1,3 +1,5 @@
+.DEFAULT_GOAL = check
+
 .PHONY: test
 test:
 	@echo 🧪 Run unit tests...
@@ -6,3 +8,6 @@ test:
 .PHONY: lint
 lint:
 	@golangci-lint run
+
+.PHONY: check
+check: test lint
