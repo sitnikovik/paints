@@ -1,7 +1,7 @@
 package background
 
 import (
-	ansi "github.com/sitnikovik/paints/internal/ansi/color"
+	"github.com/sitnikovik/paints/internal/ansi"
 	ansiBackground "github.com/sitnikovik/paints/internal/ansi/color/background"
 )
 
@@ -12,5 +12,5 @@ func Blue(s string) string {
 	if s == "" {
 		return ""
 	}
-	return ansiBackground.Blue + s + ansi.Reset
+	return ansiBackground.Blue.String() + s + ansi.Reset.String()
 }

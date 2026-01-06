@@ -1,7 +1,7 @@
 package text
 
 import (
-	ansi "github.com/sitnikovik/paints/internal/ansi/color"
+	"github.com/sitnikovik/paints/internal/ansi"
 	ansiTextStyle "github.com/sitnikovik/paints/internal/ansi/style/text"
 )
 
@@ -12,5 +12,5 @@ func Italic(s string) string {
 	if s == "" {
 		return ""
 	}
-	return ansiTextStyle.Italic + s + ansi.Reset
+	return ansiTextStyle.Italic.String() + s + ansi.Reset.String()
 }

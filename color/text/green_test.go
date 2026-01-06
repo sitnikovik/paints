@@ -3,7 +3,7 @@ package text
 import (
 	"testing"
 
-	ansi "github.com/sitnikovik/paints/internal/ansi/color"
+	"github.com/sitnikovik/paints/internal/ansi"
 	ansiText "github.com/sitnikovik/paints/internal/ansi/color/text"
 )
 
@@ -22,7 +22,7 @@ func TestGreen(t *testing.T) {
 			args: args{
 				s: "foo",
 			},
-			want: ansiText.Green + "foo" + ansi.Reset,
+			want: ansiText.Green.String() + "foo" + ansi.Reset.String(),
 		},
 		{
 			name: "empty string",
