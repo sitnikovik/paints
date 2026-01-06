@@ -1,7 +1,7 @@
 package text
 
 import (
-	ansi "github.com/sitnikovik/paints/internal/ansi/color"
+	"github.com/sitnikovik/paints/internal/ansi"
 	ansiText "github.com/sitnikovik/paints/internal/ansi/color/text"
 )
 
@@ -12,5 +12,5 @@ func Green(s string) string {
 	if s == "" {
 		return ""
 	}
-	return ansiText.Green + s + ansi.Reset
+	return ansiText.Green.String() + s + ansi.Reset.String()
 }

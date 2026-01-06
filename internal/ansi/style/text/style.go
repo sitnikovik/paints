@@ -1,12 +1,14 @@
 package text
 
+import "github.com/sitnikovik/paints/internal/ansi"
+
 const (
 	// Bold - the ANSI escape code for bold text.
-	Bold = "\033[1m"
+	Bold ansi.Code = "\033[1m"
 	// Dim - the ANSI escape code for dim text.
-	Dim = "\033[2m"
+	Dim ansi.Code = "\033[2m"
 	// Italic - the ANSI escape code for italic text.
-	Italic = "\033[3m"
+	Italic ansi.Code = "\033[3m"
 	// Underline - the ANSI escape code for underline text.
-	Underline = "\033[4m"
+	Underline ansi.Code = "\033[4m"
 )

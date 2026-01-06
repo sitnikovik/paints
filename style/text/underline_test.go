@@ -3,7 +3,7 @@ package text
 import (
 	"testing"
 
-	ansi "github.com/sitnikovik/paints/internal/ansi/color"
+	"github.com/sitnikovik/paints/internal/ansi"
 	ansiTextStyle "github.com/sitnikovik/paints/internal/ansi/style/text"
 )
 
@@ -22,7 +22,7 @@ func TestUnderline(t *testing.T) {
 			args: args{
 				s: "foo",
 			},
-			want: ansiTextStyle.Underline + "foo" + ansi.Reset,
+			want: ansiTextStyle.Underline.String() + "foo" + ansi.Reset.String(),
 		},
 		{
 			name: "empty string",

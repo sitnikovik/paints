@@ -3,7 +3,7 @@ package background
 import (
 	"testing"
 
-	ansi "github.com/sitnikovik/paints/internal/ansi/color"
+	"github.com/sitnikovik/paints/internal/ansi"
 	ansiBackground "github.com/sitnikovik/paints/internal/ansi/color/background"
 )
 
@@ -22,7 +22,7 @@ func TestCyan(t *testing.T) {
 			args: args{
 				s: "foo",
 			},
-			want: ansiBackground.Cyan + "foo" + ansi.Reset,
+			want: ansiBackground.Cyan.String() + "foo" + ansi.Reset.String(),
 		},
 		{
 			name: "empty string",

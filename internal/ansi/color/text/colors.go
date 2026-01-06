@@ -1,16 +1,18 @@
 package text
 
+import "github.com/sitnikovik/paints/internal/ansi"
+
 const (
 	// Red - the ANSI escape code for red text.
-	Red = "\033[31m"
+	Red ansi.Code = "\033[31m"
 	// Green - the ANSI escape code for green text.
-	Green = "\033[32m"
+	Green ansi.Code = "\033[32m"
 	// Yellow - the ANSI escape code for yellow text.
-	Yellow = "\033[33m"
+	Yellow ansi.Code = "\033[33m"
 	// Blue - the ANSI escape code for blue text.
-	Blue = "\033[34m"
+	Blue ansi.Code = "\033[34m"
 	// Purple - the ANSI escape code for purple text.
-	Purple = "\033[35m"
+	Purple ansi.Code = "\033[35m"
 	// Cyan - the ANSI escape code for cyan text.
-	Cyan = "\033[36m"
+	Cyan ansi.Code = "\033[36m"
 )
