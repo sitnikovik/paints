@@ -2,7 +2,7 @@ package text
 
 import (
 	"github.com/sitnikovik/paints/internal/ansi"
-	ansiTextStyle "github.com/sitnikovik/paints/internal/ansi/style/text"
+	style "github.com/sitnikovik/paints/internal/ansi/style/text"
 )
 
 // Underline returns a new string with underline text style.
@@ -12,5 +12,5 @@ func Underline(s string) string {
 	if s == "" {
 		return ""
 	}
-	return ansiTextStyle.Underline.String() + s + ansi.Reset.String()
+	return ansi.WrapString(s, style.Underline)
 }

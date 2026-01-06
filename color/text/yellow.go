@@ -2,7 +2,7 @@ package text
 
 import (
 	"github.com/sitnikovik/paints/internal/ansi"
-	ansiText "github.com/sitnikovik/paints/internal/ansi/color/text"
+	color "github.com/sitnikovik/paints/internal/ansi/color/text"
 )
 
 // Yellow returns a new string with yellow text.
@@ -12,5 +12,5 @@ func Yellow(s string) string {
 	if s == "" {
 		return ""
 	}
-	return ansiText.Yellow.String() + s + ansi.Reset.String()
+	return ansi.WrapString(s, color.Yellow)
 }

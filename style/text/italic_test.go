@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/sitnikovik/paints/internal/ansi"
-	ansiTextStyle "github.com/sitnikovik/paints/internal/ansi/style/text"
+	style "github.com/sitnikovik/paints/internal/ansi/style/text"
 )
 
 func TestItalic(t *testing.T) {
@@ -22,7 +22,7 @@ func TestItalic(t *testing.T) {
 			args: args{
 				s: "foo",
 			},
-			want: ansiTextStyle.Italic.String() + "foo" + ansi.Reset.String(),
+			want: style.Italic.String() + "foo" + ansi.Reset.String(),
 		},
 		{
 			name: "empty string",

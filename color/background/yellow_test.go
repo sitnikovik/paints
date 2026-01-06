@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/sitnikovik/paints/internal/ansi"
-	ansiBackground "github.com/sitnikovik/paints/internal/ansi/color/background"
+	bg "github.com/sitnikovik/paints/internal/ansi/color/background"
 )
 
 func TestYellow(t *testing.T) {
@@ -22,7 +22,7 @@ func TestYellow(t *testing.T) {
 			args: args{
 				s: "foo",
 			},
-			want: ansiBackground.Yellow.String() + "foo" + ansi.Reset.String(),
+			want: bg.Yellow.String() + "foo" + ansi.Reset.String(),
 		},
 		{
 			name: "empty string",

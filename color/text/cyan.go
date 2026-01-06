@@ -2,7 +2,7 @@ package text
 
 import (
 	"github.com/sitnikovik/paints/internal/ansi"
-	ansiText "github.com/sitnikovik/paints/internal/ansi/color/text"
+	color "github.com/sitnikovik/paints/internal/ansi/color/text"
 )
 
 // Cyan returns a new string with cyan text.
@@ -12,5 +12,5 @@ func Cyan(s string) string {
 	if s == "" {
 		return ""
 	}
-	return ansiText.Cyan.String() + s + ansi.Reset.String()
+	return ansi.WrapString(s, color.Cyan)
 }

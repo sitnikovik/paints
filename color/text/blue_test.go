@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/sitnikovik/paints/internal/ansi"
-	ansiText "github.com/sitnikovik/paints/internal/ansi/color/text"
+	color "github.com/sitnikovik/paints/internal/ansi/color/text"
 )
 
 func TestBlue(t *testing.T) {
@@ -22,7 +22,7 @@ func TestBlue(t *testing.T) {
 			args: args{
 				s: "foo",
 			},
-			want: ansiText.Blue.String() + "foo" + ansi.Reset.String(),
+			want: color.Blue.String() + "foo" + ansi.Reset.String(),
 		},
 		{
 			name: "empty string",
