@@ -12,3 +12,9 @@ type Code string
 func (c Code) String() string {
 	return string(c)
 }
+
+// WrapString wraps the provided string with the given ANSI code
+// on the left and the reset code on the right.
+func WrapString(s string, c Code) string {
+	return c.String() + s + Reset.String()
+}

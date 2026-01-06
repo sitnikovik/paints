@@ -2,7 +2,7 @@ package text
 
 import (
 	"github.com/sitnikovik/paints/internal/ansi"
-	ansiTextStyle "github.com/sitnikovik/paints/internal/ansi/style/text"
+	style "github.com/sitnikovik/paints/internal/ansi/style/text"
 )
 
 // Dim returns a new string with dim text style.
@@ -12,5 +12,5 @@ func Dim(s string) string {
 	if s == "" {
 		return ""
 	}
-	return ansiTextStyle.Dim.String() + s + ansi.Reset.String()
+	return ansi.WrapString(s, style.Dim)
 }

@@ -2,7 +2,7 @@ package background
 
 import (
 	"github.com/sitnikovik/paints/internal/ansi"
-	ansiBackground "github.com/sitnikovik/paints/internal/ansi/color/background"
+	bg "github.com/sitnikovik/paints/internal/ansi/color/background"
 )
 
 // Cyan returns a new string with cyan background.
@@ -12,5 +12,5 @@ func Cyan(s string) string {
 	if s == "" {
 		return ""
 	}
-	return ansiBackground.Cyan.String() + s + ansi.Reset.String()
+	return ansi.WrapString(s, bg.Cyan)
 }

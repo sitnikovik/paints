@@ -2,7 +2,7 @@ package background
 
 import (
 	"github.com/sitnikovik/paints/internal/ansi"
-	ansiBackground "github.com/sitnikovik/paints/internal/ansi/color/background"
+	bg "github.com/sitnikovik/paints/internal/ansi/color/background"
 )
 
 // Red returns a new string with red background.
@@ -12,5 +12,5 @@ func Red(s string) string {
 	if s == "" {
 		return ""
 	}
-	return ansiBackground.Red.String() + s + ansi.Reset.String()
+	return ansi.WrapString(s, bg.Red)
 }

@@ -2,7 +2,7 @@ package text
 
 import (
 	"github.com/sitnikovik/paints/internal/ansi"
-	ansiTextStyle "github.com/sitnikovik/paints/internal/ansi/style/text"
+	style "github.com/sitnikovik/paints/internal/ansi/style/text"
 )
 
 // Bold returns a new string with bold text style.
@@ -12,5 +12,5 @@ func Bold(s string) string {
 	if s == "" {
 		return ""
 	}
-	return ansiTextStyle.Bold.String() + s + ansi.Reset.String()
+	return ansi.WrapString(s, style.Bold)
 }
